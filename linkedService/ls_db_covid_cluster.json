@@ -1,0 +1,20 @@
+{
+	"name": "ls_db_covid_cluster",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-2395706091928303.3.azuredatabricks.net",
+			"newClusterNodeType": "Standard_DS3_v2",
+			"newClusterNumOfWorker": "1",
+			"newClusterSparkEnvVars": {
+				"PYSPARK_PYTHON": "/databricks/python3/bin/python3"
+			},
+			"newClusterVersion": "11.3.x-cpu-ml-scala2.12",
+			"clusterOption": "Fixed",
+			"newClusterInitScripts": [],
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDE0MDg3MTJCLTREQ0ItNEY5QS05RUMwLUE4MzIyNjI4QUM4OV80MjliNmIxNS05N2VkLTQ2NTgtYTNjNi1iNDY5MjRjOWQxZTkiDQp9"
+		}
+	}
+}
